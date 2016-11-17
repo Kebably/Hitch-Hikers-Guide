@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html lang="en">
+
+<head>
+
+<style type="text/css">
+
+.bar{
+position: absolute;
+right: 0;
+bottom: 50px;
+height: 50px;
+background-color: #326DEB;
+	animation: aly 2s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+	@keyframes aly { 
+		from {width: 0; color: transparent; font-size: 0;}
+		to {width: 500px; color: #D7F45C; font-size: 25px;}
+	}
+
+#id{
+	margin-left: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: Arial Narrow;
+	padding-left: 15px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	width: 100%;
+}
+
+/* FOOTER */
+	#footer{
+		width: 100%;
+		bottom: 0;
+		position: absolute;
+		left: 0px;
+		background-color: #E93C7C;
+	overflow: hidden;
+	animation: mymove .5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+	@keyframes mymove { 
+		from {bottom: 0; height: 0;}
+		to {height: 150px;}
+	}
+
+#navbox{
+position: absolute;
+left: 0;
+top: 100px;
+}
+
+.ball{
+transition: all .2s ease-in-out;
+}
+.sliderone .ball{background-color: #60388E;}
+.slidertwo .ball{background-color: #2C6BD2;}
+.sliderthree .ball{background-color: #5B9908;}
+.sliderfour .ball{background-color: #D57008;}
+.sliderfive .ball{background-color: #FF1E34;}
+
+.sliderone:hover .ball{background-color: #E9C33C;}
+.slidertwo:hover .ball{background-color: #E9C33C;}
+.sliderthree:hover .ball{background-color: #E9C33C;}
+.sliderfour:hover .ball{background-color: #E9C33C;}
+.sliderfive:hover .ball{background-color: #E9C33C;}
+
+body{ background-color: #F6DB36; }
+
+.sliderone, .slidertwo, .sliderthree, .sliderfour, .sliderfive{
+position: relative;
+width: 500px; height: 50px; display: block; color: #D7F45C; overflow: hidden;
+border-radius: 0 2em 2em 0;
+transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-ms-transition: all .4s ease-in-out;
+}
+
+.ball{
+position: absolute;
+right: 0;
+top: 0;
+width: 30px;
+height: 30px;
+border-radius: 2em;
+border: 10px solid #60388E;
+}
+
+.title{
+margin-right: 50px;
+text-align: right;
+text-transform: uppercase;
+font-weight: bold;
+font-family: Arial Narrow;
+font-size: 20px;
+padding-right: 15px;
+line-height: 50px;
+letter-spacing: 1px;
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sliderone:hover, .slidertwo:hover, .sliderthree:hover, .sliderfour:hover, .sliderfive:hover{ width: 550px;}
+
+.sliderone{  background-color: #7B5ECA;  animation: img 2s; }
+.slidertwo{  background-color: #699EFC;  animation: img 2.25s; }
+.sliderthree{  background-color: #84C312;  animation: img 2.5s; }
+.sliderfour{  background-color: #FC8E01;  animation: img 2.75s; }
+.sliderfive{  background-color: #FC5A55;  animation: img 3s; }
+
+@keyframes img{
+    from {width: 0; color: transparent;}
+    to {width: 500px;}
+}
+
+#impone{
+position: absolute;
+left: -25px;
+top: 0;
+width: 50px;
+height: 50px;
+background-color: #FFF;
+border: 2px solid #326DEB;
+box-shadow: 0 0 2px 2px #fff;
+border-radius: 2em;
+}
+
+#imptwo{
+position: absolute;
+margin-left: -25px;
+left: 3px;
+top: 3px;
+width: 48px;
+height: 48px;
+background-color: #BBB;
+box-shadow: 0 0 2px 2px #fff;
+border-radius: 2em;
+}
+
+#impthree{
+border-radius: 1em;
+position: absolute;
+margin-left: -25px;
+left: 15px;
+top: 15px;
+width: 20px;
+height: 20px;
+background-color: #C1DFF7;
+border: 2px solid #000;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="navbox"><!--- Moving to a place, then back ---!>
+
+<div class="sliderone">
+<div class="title">Play Movie</div>
+<div class="ball" style="border-color: #60388E;"></div>
+</div>
+
+<div class="slidertwo">
+<div class="title">Scene Selection</div>
+<div class="ball" style="border-color: #2C6BD2;"></div>
+</div>
+
+<div class="sliderthree">
+<div class="title">Bonus Features</div>
+<div class="ball"  style="border-color: #5B9908;"></div>
+</div>
+
+<div class="sliderfour">
+<div class="title">Set Up</div>
+<div class="ball"  style="border-color: #D57008;"></div>
+</div>
+
+<div class="sliderfive">
+<div class="title">Sneak Peek</div>
+<div class="ball"  style="border-color: #FF1E34;"></div>
+</div>
+
+</div>
+
+<div id="footer">
+<div class="bar">
+<div id="id">Improbability Drive</div>
+<div id="impone"></div>
+<div id="imptwo"></div>
+<div id="impthree"></div>
+</div>
+</div>
+
+</body>
+
+</html>
